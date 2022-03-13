@@ -1,0 +1,19 @@
+{
+  "name": "til-vuepress",
+  "version": "0.0.1",
+  "description": "VuePress 실습용 wally-wally의 TIL 페이지",
+  "main": "index.js",
+  "authors": {
+    "name": "wally-wally",
+    "email": "wallys0213@gmail.com"
+  },
+  "repository": "https://github.com/wally-wally/til-vuepress.git",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
