@@ -1,5 +1,5 @@
 {
-  "name": "til-vuepress",
+  "name": "wally-wally-til",
   "version": "0.0.1",
   "description": "VuePress 실습용 wally-wally의 TIL 페이지",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "name": "wally-wally",
     "email": "wallys0213@gmail.com"
   },
-  "repository": "https://github.com/wally-wally/til-vuepress.git",
+  "repository": "https://github.com/wally-wally/wally-wally-til.git",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
