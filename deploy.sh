@@ -3,6 +3,7 @@
 # abort on errors
 set -e
 
+npm install
 # build
 npm run build
 
@@ -20,7 +21,6 @@ git commit -m 'deploy with vuepress'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/wally-wally/wally-wally-til.git master:gh-pages
+git push -f git@github.com:wally-wally/wally-wally-til.git master:gh-pages
 
 cd -
- 
