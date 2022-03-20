@@ -22,5 +22,4 @@ git commit -m 'deploy with vuepress'
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f https://github.com/wally-wally/wally-wally-til.git master:gh-pages
 
-cd -
- 
+cd docs
