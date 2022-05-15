@@ -1,7 +1,7 @@
 {
   "name": "wally-wally-til",
   "version": "0.0.1",
-  "description": "VuePress 실습용 wally-wally의 TIL 페이지",
+  "description": "wally-wally's TIL",
   "main": "index.js",
   "authors": {
     "name": "wally-wally",

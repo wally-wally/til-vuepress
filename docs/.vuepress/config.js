@@ -104,6 +104,22 @@ module.exports = {
               title: 'Chapter12',
               path: '/til/js-deep-dive/chapter12'
             },
+            {
+              title: 'Chapter13',
+              path: '/til/js-deep-dive/chapter13'
+            },
+            {
+              title: 'Chapter14',
+              path: '/til/js-deep-dive/chapter14'
+            },
+            {
+              title: 'Chapter15',
+              path: '/til/js-deep-dive/chapter15'
+            },
+            {
+              title: 'Chapter16',
+              path: '/til/js-deep-dive/chapter16'
+            },
           ]
         },
         {
