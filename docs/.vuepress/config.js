@@ -120,6 +120,10 @@ module.exports = {
               title: 'Chapter16',
               path: '/til/js-deep-dive/chapter16'
             },
+            {
+              title: 'Chapter17',
+              path: '/til/js-deep-dive/chapter17'
+            },
           ]
         },
         {
