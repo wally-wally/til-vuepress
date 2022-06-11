@@ -1,4 +1,5 @@
 const { description } = require('../../package')
+const { setJSDeepDive, setRefactoring } = require('./generateSidebar')
 
 module.exports = {
   /**
@@ -63,68 +64,7 @@ module.exports = {
         {
           title: 'JS Deep Dive',
           collapsable: true,
-          children: [
-            {
-              title: 'Overview',
-              path: '/til/js-deep-dive/'
-            },
-            {
-              title: 'Chapter04',
-              path: '/til/js-deep-dive/chapter04'
-            },
-            {
-              title: 'Chapter05',
-              path: '/til/js-deep-dive/chapter05'
-            },
-            {
-              title: 'Chapter06',
-              path: '/til/js-deep-dive/chapter06'
-            },
-            {
-              title: 'Chapter07',
-              path: '/til/js-deep-dive/chapter07'
-            },
-            {
-              title: 'Chapter08',
-              path: '/til/js-deep-dive/chapter08',
-            },
-            {
-              title: 'Chapter09',
-              path: '/til/js-deep-dive/chapter09'
-            },
-            {
-              title: 'Chapter10',
-              path: '/til/js-deep-dive/chapter10'
-            },
-            {
-              title: 'Chapter11',
-              path: '/til/js-deep-dive/chapter11'
-            },
-            {
-              title: 'Chapter12',
-              path: '/til/js-deep-dive/chapter12'
-            },
-            {
-              title: 'Chapter13',
-              path: '/til/js-deep-dive/chapter13'
-            },
-            {
-              title: 'Chapter14',
-              path: '/til/js-deep-dive/chapter14'
-            },
-            {
-              title: 'Chapter15',
-              path: '/til/js-deep-dive/chapter15'
-            },
-            {
-              title: 'Chapter16',
-              path: '/til/js-deep-dive/chapter16'
-            },
-            {
-              title: 'Chapter17',
-              path: '/til/js-deep-dive/chapter17'
-            },
-          ]
+          children: setJSDeepDive({ startChapter: 4, endChapter: 17 }),
         },
         {
           title: 'Effective TypeScript',
@@ -179,6 +119,11 @@ module.exports = {
               path: '/til/effective-typescript/item49-51'
             },
           ]
+        },
+        {
+          title: 'Refactoring',
+          collapsable: true,
+          children: setRefactoring({ startChapter: 1, endChapter: 24 }),
         }
       ],
     }
