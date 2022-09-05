@@ -38,6 +38,23 @@ const setRefactoring = ({ startChapter, endChapter }) => {
   return [overview, ...pages];
 }
 
+const setFunctionalCoding = ({ startChapter, endChapter }) => {
+  const overview = {
+    title: 'Overview',
+    path: '/til/functional-coding/'
+  }
+
+  const pages = [];
+  for (let chapter = startChapter; chapter <= endChapter; chapter += 1) {
+    pages.push({
+      title: `Chapter${padZero(chapter)}`,
+      path: `/til/functional-coding/chapter${padZero(chapter)}`
+    });
+  }
+
+  return [overview, ...pages];
+}
+
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -161,7 +178,12 @@ module.exports = {
           title: 'Refactoring',
           collapsable: true,
           children: setRefactoring({ startChapter: 1, endChapter: 24 }),
-        }
+        },
+        {
+          title: 'Functional Coding',
+          collapsable: true,
+          children: setFunctionalCoding({ startChapter: 1, endChapter: 3 }),
+        },
       ],
     }
   },
