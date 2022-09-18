@@ -182,7 +182,7 @@ module.exports = {
         {
           title: 'Functional Coding',
           collapsable: true,
-          children: setFunctionalCoding({ startChapter: 1, endChapter: 3 }),
+          children: setFunctionalCoding({ startChapter: 1, endChapter: 5 }),
         },
       ],
     }
