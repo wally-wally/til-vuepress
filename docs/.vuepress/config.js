@@ -38,19 +38,18 @@ const setRefactoring = ({ startChapter, endChapter }) => {
   return [overview, ...pages];
 }
 
-const setFunctionalCoding = ({ startChapter, endChapter }) => {
+const setFunctionalCoding = (chapters) => {
   const overview = {
     title: 'Overview',
     path: '/til/functional-coding/'
   }
 
-  const pages = [];
-  for (let chapter = startChapter; chapter <= endChapter; chapter += 1) {
-    pages.push({
+  const pages = chapters.map((chapter) => {
+    return {
       title: `Chapter${padZero(chapter)}`,
       path: `/til/functional-coding/chapter${padZero(chapter)}`
-    });
-  }
+    }
+  });
 
   return [overview, ...pages];
 }
@@ -182,7 +181,7 @@ module.exports = {
         {
           title: 'Functional Coding',
           collapsable: true,
-          children: setFunctionalCoding({ startChapter: 1, endChapter: 5 }),
+          children: setFunctionalCoding([1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17]),
         },
       ],
     }
