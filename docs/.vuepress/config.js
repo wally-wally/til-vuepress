@@ -181,7 +181,7 @@ module.exports = {
         {
           title: 'Functional Coding',
           collapsable: true,
-          children: setFunctionalCoding([1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17]),
+          children: setFunctionalCoding([1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18]),
         },
       ],
     }
